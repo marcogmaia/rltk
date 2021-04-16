@@ -4,7 +4,6 @@
  * Copyright (c) 2016-Present, Bracket Productions.
  * Licensed under the MIT license - see LICENSE file.
  *
- * Random number generator class.
  */
 
 #include <functional>
