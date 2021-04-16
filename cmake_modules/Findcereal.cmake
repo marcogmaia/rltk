@@ -11,7 +11,7 @@ find_path(CEREAL_INCLUDE_DIRS cereal
 set(CEREAL_INCLUDE_DIRS ${CEREAL_INCLUDE_DIRS})
 
 include(FindPackageHandleStandardArgs)
-find_package_handle_standard_args(Cereal DEFAULT_MSG CEREAL_INCLUDE_DIRS)
+find_package_handle_standard_args(cereal DEFAULT_MSG CEREAL_INCLUDE_DIRS)
 
 mark_as_advanced(CEREAL_INCLUDE_DIRS)
 
