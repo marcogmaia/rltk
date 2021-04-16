@@ -11,3 +11,6 @@ x84
 /RltkMaster/rltk/SFML-2.3.2
 *.opendb
 /RltkMaster/.vs/RltkMaster/v14/.suo
+
+checks.json
+.vscode
