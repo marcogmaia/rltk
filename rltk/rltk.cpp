@@ -65,7 +65,7 @@ void init(const config_advanced &config) {
 
     sf::ContextSettings settings;
     settings.antialiasingLevel = 4;
-    settings.depthBits = 32;
+    settings.depthBits = 24;
     settings.stencilBits = 8;
 
     if (!config.fullscreen) {
