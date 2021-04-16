@@ -149,7 +149,10 @@ void run(std::function<void(double)> on_tick) {
         }
         main_window->display();
         if (main_detail::taking_screenshot) {
-            sf::Image screen = rltk::get_window()->capture();
+            sf::Texture tex; 
+            tex.update(*rltk::get_window());
+            sf::Image screen = tex.copyToImage();
+
             screen.saveToFile(main_detail::screenshot_filename);
             main_detail::screenshot_filename = "";
             main_detail::taking_screenshot = false;
