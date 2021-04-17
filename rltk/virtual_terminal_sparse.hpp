@@ -26,7 +26,7 @@ struct xchar {
 	xchar() {}
 	xchar(const int Glyph, const color_t fg, const float X, const float Y) : glyph(Glyph), foreground(fg), x(X), y(Y) {}
 	xchar(const int Glyph, const color_t fg, const float X, const float Y, const int ANGLE) : glyph(Glyph), foreground(fg), x(X), y(Y), angle(ANGLE) {}
-	int glyph; // Glyph to render
+	uint32_t glyph; // Glyph to render
 	color_t foreground; // Foreground color
 	float x = 0.0f; // Provided as floats to allow for partial character movement/sliding
 	float y = 0.0f;
