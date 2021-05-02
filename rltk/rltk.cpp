@@ -34,7 +34,6 @@ void init(const config_simple &config) {
         main_window = std::make_unique<sf::RenderWindow>(sf::VideoMode(desktop.width, desktop.height, desktop.bitsPerPixel)
             , config.window_title, sf::Style::Fullscreen);
     }
-    main_window->setVerticalSyncEnabled(true);
     main_detail::use_root_console = true;
 
     console = std::make_unique<virtual_terminal>(config.root_font, 0, 0);
@@ -52,7 +51,6 @@ void init(const config_simple_px &config) {
         main_window = std::make_unique<sf::RenderWindow>(sf::VideoMode(desktop.width, desktop.height, desktop.bitsPerPixel)
             , config.window_title, sf::Style::Fullscreen);
     }
-    main_window->setVerticalSyncEnabled(true);
     main_detail::use_root_console = true;
 
     console = std::make_unique<virtual_terminal>(config.root_font, 0, 0);
@@ -76,7 +74,6 @@ void init(const config_advanced &config) {
         main_window = std::make_unique<sf::RenderWindow>(sf::VideoMode(desktop.width, desktop.height, desktop.bitsPerPixel)
             , config.window_title, sf::Style::Fullscreen, settings);
     }
-    main_window->setVerticalSyncEnabled(true);
     main_detail::use_root_console = false;
 
     gui = std::make_unique<gui_t>(config.width_px, config.height_px);
