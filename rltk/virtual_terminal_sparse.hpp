@@ -67,7 +67,7 @@ struct virtual_terminal_sparse {
         dirty = true;
         buffer.push_back(target);
     }
-    void render(sf::RenderWindow& window);
+    void render(sf::RenderTarget& window);
 
     int term_width;
     int term_height;

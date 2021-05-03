@@ -206,7 +206,7 @@ void virtual_terminal::draw_sprite(const int x, const int y,
     }
 }
 
-void virtual_terminal::render(sf::RenderWindow& window) {
+void virtual_terminal::render(sf::RenderTarget& window) {
     if(!visible)
         return;
 
